@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<a href="index.html">Home</a>
+		<h3>SVG</h3>
+		<p>Using SVG to represent/visualize data is usually more reliable, consistent, and faster than using regular HTML elements.  SVG is XML based, so open tags need to be matched with a closing tag: <code>&lt;element&gt;&lt;/element&gt;</code>.  The <code>&lt;svg&gt;&lt;/svg&gt;</code> tag is the container object where the shapes will be generated, a lot like the HTML5 <code>&lt;canvas&gt;</code> tag.  You have to also specify the <code>height</code> and <code>width</code> attributes if you don't want it taking up the entire window.</p>
+		<h3>Basic SVG:</h3>
+		<p>The basic shapes have their own elements:</p>
+		<ul>
+			<li>
+				Circle:<br>	
+				<svg width="100" height="100">
+					<circle cx="50" cy="50" r="25"/>
+				</svg>
+				<code><pre>
+&lt;svg width="100" height="100"&gt;
+	&lt;circle cx="50" cy="50" r="25"/&gt;
+&lt;/svg&gt;
+				</pre></code>
+			</li>
+			<li>
+				Ellipse:<br>	
+				<svg width="100" height="100">
+					<ellipse cx="50" cy="50" rx="40" ry="20"/>
+				</svg>
+				<code><pre>
+&lt;svg width="100" height="100"&gt;
+	&lt;ellipse cx="50" cy="50" rx="40" ry="20"/&gt;
+&lt;/svg&gt;
+				</pre></code>
+			</li>
+			<li>
+				Rectangle:<br>	
+				<svg width="100" height="100">
+					<rect x="10" y="10" width="80" height="80"/>
+				</svg>
+				<code><pre>
+&lt;svg width="100" height="100"&gt;
+	&lt;rect x="10" y="10" width="80" height="80"/&gt;
+&lt;/svg&gt;
+				</pre></code>
+			</li>
+			<li>
+				Line:<br>	
+				<svg width="100" height="100">
+					<line x1="0" y1="0" x2="100" y2="100" stroke="black"/>
+				</svg>
+				<code><pre>
+&lt;svg width="100" height="100"&gt;
+	&lt;line x1="0" y1="0" x2="100" y2="100" stroke="black"/&gt;
+&lt;/svg&gt;
+				</pre></code>
+			</li>
+		</ul>
+
+<h3>Styling and Rendering</h3>
+		The <code>fill</code> attribute lets us set the color of the SVG element
+		<ul>
+			<li>
+				Circles:<br>	
+				<svg width="100" height="100">
+					<circle cx="10" cy="50" r="10" fill="rgba(128, 0, 128, 1.0)"/>
+					<circle cx="30" cy="50" r="15" fill="rgba(0, 0, 255, 0.75)"/>
+					<circle cx="50" cy="50" r="20" fill="rgba(0, 255, 0, 0.5)"/>
+					<circle cx="70" cy="50" r="15" fill="rgba(255, 255, 0, 0.25)"/>
+					<circle cx="90" cy="50" r="10" fill="rgba(255, 0, 0, 0.1)"/>
+				</svg>
+				<code><pre>
+&lt;svg width="100" height="100"&gt;
+	&lt;circle cx="10" cy="50" r="10" fill="rgba(128, 0, 128, 1.0)"/&gt;
+	&lt;circle cx="30" cy="50" r="15" fill="rgba(0, 0, 255, 0.75)"/&gt;
+	&lt;circle cx="50" cy="50" r="20" fill="rgba(0, 255, 0, 0.5)"/&gt;
+	&lt;circle cx="70" cy="50" r="15" fill="rgba(255, 255, 0, 0.25)"/&gt;
+	&lt;circle cx="90" cy="50" r="10" fill="rgba(255, 0, 0, 0.1)"/&gt;
+&lt;/svg&gt;
+				</pre></code>
+			</li>
+		</ul>
+		<a href="transitions.html">Transitions</a> - <a href="d3-svg.html">D3 SVG</a>
+		<script>
+			function applyD3Selectors(){
+				
+			}
+		</script>
+	</body>
+</html>
