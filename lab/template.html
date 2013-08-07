@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h3>Example:</h3>
+		
+		<!-- ********** Put the DOM here ********** -->
+		<p>One</p>
+		<p>Two</p>
+		<p>Three</p>
+		<p>Four</p>
+		
+
+		<button onclick="applyD3Selectors()">Apply D3</button><br>
+		<script>
+			function applyD3Selectors(){
+				// ********** Put D3 JS here **********
+				d3.selectAll("p").style("color", "white");
+				d3.selectAll("p").style("background-color", "black");
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3: Smoother highlight transitions</title>
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<style type="text/css">
+			/* No style rules here yet */		
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			//Width and height
+			var w = 600;
+			var h = 250;
+			
+			var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
+							11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
+
+			// 1. set your xScale and yScale vars
+
+			// 2. create your SVG element and give it a width and a height
+
+			// 3. create your bars using selectAll and append it to your new SVG element
+
+			// 4. set some of it's attr's, such as the x, y, h, w
+
+			// 5. attach events to mouseover and mouseout
+			
+			// 6. bonus! implement sorting of data
+
+			// 7. look closely at how to create labels using "text"
+			svg.selectAll("text")
+			   .data(dataset)
+			   .enter()
+			   .append("text")
+			   .text(function(d) {
+			   		return d;
+			   })
+			   .attr("text-anchor", "middle") // there are a few different options here
+			   .attr("x", function(d, i) {
+			   		return xScale(i) + xScale.rangeBand() / 2;
+			   })
+			   .attr("y", function(d) {
+			   		return h - yScale(d) + 14;
+			   })
+			   .attr("font-family", "sans-serif")
+			   .attr("font-size", "11px")
+			   .attr("fill", "white");
+			
+		</script>
+	</body>
+</html>
