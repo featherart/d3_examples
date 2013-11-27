@@ -90,3 +90,16 @@ color.domain([d3.min(data, function(d) { return d.value; }),
 		d3.max(data, function(d) { return d.value; }) ]);
 
 The quantize scale function is linear but outputs values in a discrete range, and the domain closures are creating the relationship between data and color values.
+
+More Resources:
+start here:
+http://d3js.org/
+
+on selection!
+http://bost.ocks.org/mike/selection/
+
+more tutorials:
+https://www.dashingd3js.com/table-of-contents
+
+tons of examples from NY Times, etc.:
+http://bost.ocks.org/mike/
